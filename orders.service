@@ -1,5 +1,5 @@
 [Unit]
-Description=KuraKura Order Printer
+Description= Order Printer
 After=network-online.target
 Wants=network-online.target
 
