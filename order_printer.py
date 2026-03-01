@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-KuraKura Order Printer
+Order Printer
 Monitors an iCloud Mail inbox for Squarespace order notifications
 and prints a receipt on a thermal printer via CUPS.
 """
