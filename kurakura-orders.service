@@ -1,0 +1,16 @@
+[Unit]
+Description=KuraKura Order Printer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/kurakura-order-printer
+EnvironmentFile=/home/pi/kurakura-order-printer/.env
+ExecStart=/usr/bin/python3 /home/pi/kurakura-order-printer/order_printer.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
