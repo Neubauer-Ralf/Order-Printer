@@ -1,6 +1,6 @@
-# KuraKura Order Printer 🖨️☕
+# Order Printer
 
-A lightweight Python script that monitors an email inbox (via IMAP) for Squarespace order notifications and prints a receipt on a thermal printer. Designed to run on a Raspberry Pi.
+A lightweight Python script that monitors my email inbox (via IMAP) for Squarespace order notifications and prints a receipt on a thermal printer. Designed to run on a Raspberry Pi.
 
 ## How It Works
 
@@ -13,7 +13,7 @@ A lightweight Python script that monitors an email inbox (via IMAP) for Squaresp
 ## Hardware
 
 - Raspberry Pi (any model with network access)
-- ESC/POS thermal receipt printer (tested with Epson TM-T20II)
+- ESC/POS thermal receipt printer (I use it with an Epson TM-T20II)
 - Printer connected via USB and configured in CUPS
 
 ## Setup
@@ -21,7 +21,7 @@ A lightweight Python script that monitors an email inbox (via IMAP) for Squaresp
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/Neubauer-Ralf/kurakura-order-printer.git
+git clone https://github.com/Neubauer-Ralf/order-printer.git
 cd kurakura-order-printer
 ```
 
@@ -113,7 +113,7 @@ sudo systemctl stop kurakura-orders
 
 ```
 ================================
-        ~ KURA KURA ~
+        ~ INSERT COMPANY ~
           NEW ORDER!
 ================================
 
