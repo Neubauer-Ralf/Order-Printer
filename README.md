@@ -22,7 +22,7 @@ A lightweight Python script that monitors my email inbox (via IMAP) for Squaresp
 
 ```bash
 git clone https://github.com/Neubauer-Ralf/order-printer.git
-cd kurakura-order-printer
+cd   -order-printer
 ```
 
 ### 2. Create your environment file
@@ -40,21 +40,21 @@ Fill in your credentials and printer name. See [Configuration](#configuration) b
 python3 order_printer.py
 ```
 
-Send yourself a test email with "kura kura" in the subject to verify it picks it up and prints.
+Send yourself a test email with "   " in the subject to verify it picks it up and prints.
 
 ### 4. Install as a system service
 
 ```bash
 # Copy and edit the service file (update User and paths if needed)
-sudo cp kurakura-orders.service /etc/systemd/system/
-sudo nano /etc/systemd/system/kurakura-orders.service
+sudo cp   -orders.service /etc/systemd/system/
+sudo nano /etc/systemd/system/  -orders.service
 
 # Enable and start
-sudo systemctl enable kurakura-orders
-sudo systemctl start kurakura-orders
+sudo systemctl enable   -orders
+sudo systemctl start   -orders
 
 # Verify it's running
-sudo systemctl status kurakura-orders
+sudo systemctl status   -orders
 ```
 
 ## Configuration
@@ -71,8 +71,8 @@ All configuration is done via environment variables. Copy `.env.example` to `.en
 | `PRINT_WIDTH` | Thermal printer character width | `32` |
 | `CHECK_INTERVAL` | Seconds between inbox checks | `120` |
 | `SENDER_FILTER` | Filter emails by sender (matched against From header) | `squarespace` |
-| `SUBJECT_FILTER` | Filter emails by subject (matched against Subject header) | `kura kura` |
-| `LOG_FILE` | Path to log file | `~/kurakura-orders.log` |
+| `SUBJECT_FILTER` | Filter emails by subject (matched against Subject header) | `   ` |
+| `LOG_FILE` | Path to log file | `~/  -orders.log` |
 
 ### iCloud Custom Domain Note
 
@@ -90,16 +90,16 @@ Apple requires an app-specific password for third-party IMAP access:
 
 ```bash
 # Check service status
-sudo systemctl status kurakura-orders
+sudo systemctl status   -orders
 
 # View live logs
-journalctl -u kurakura-orders -f
+journalctl -u   -orders -f
 
 # Restart after config changes
-sudo systemctl restart kurakura-orders
+sudo systemctl restart   -orders
 
 # Stop the service
-sudo systemctl stop kurakura-orders
+sudo systemctl stop   -orders
 ```
 
 ## Customization
